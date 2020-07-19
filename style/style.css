@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #F7F7EE;
+}
+
+p, a {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #0B032D;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #0B032D;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: nowrap row;
+          flex-flow: nowrap row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 30px;
+  height: 25vw;
+  border-bottom: 1px solid #0B032D;
+}
+
+.titles .subtitle {
+  font-weight: 300;
+}
+
+nav .icon-nav {
+  background-color: #FFCA3A;
+  padding: 20px;
+  border-radius: 5px;
+  margin: auto;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav .icon-settings {
+  background-image: url("https://gist.githubusercontent.com/SimonettiT/6f56e68bff9f8e278546fee6ba3b02c0/raw/cdc601d499160ef7cfdc73b643e9ec024c098cf8/engranaje.svg");
+}
+
+nav .icon-statistics {
+  background-image: url("https://gist.githubusercontent.com/SimonettiT/6f56e68bff9f8e278546fee6ba3b02c0/raw/cdc601d499160ef7cfdc73b643e9ec024c098cf8/estadistica.svg");
+}
+
+.status-outside {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  width: 85%;
+  margin: auto;
+}
+
+.status-outside .status-card {
+  background-color: #80B918;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.status-outside .status-card .type-data-outside {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.status-outside .status-card .data-outside {
+  font-weight: 700;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.status-outside .wifi-card {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.status-inside {
+  background-image: url("https://gist.githubusercontent.com/SimonettiT/6f56e68bff9f8e278546fee6ba3b02c0/raw/cdc601d499160ef7cfdc73b643e9ec024c098cf8/casa.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 366px;
+  height: 387px;
+  margin: auto;
+  text-align: center;
+  margin-top: 3px;
+}
+
+.status-inside .title-inside {
+  padding-top: 70px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+
+.status-inside .btn-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: nowrap row;
+          flex-flow: nowrap row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.status-inside .btn-switch button {
+  margin: auto 10px;
+  width: 78px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #97D91C;
+  border: none;
+  position: relative;
+}
+
+.status-inside .btn-switch button::after {
+  content: " ";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 100px;
+  background-color: #F7F7EE;
+}
+
+.status-inside .status-inside-data {
+  margin: 20px auto;
+}
+
+.status-inside .status-inside-data .label-data-inside {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.status-inside .status-inside-data .data-inside {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+/*# sourceMappingURL=style.css.map */

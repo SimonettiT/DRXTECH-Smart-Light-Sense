@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRXTECH | Smart Light Sense</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="titles">
+        <h1 class="title">DRXTECH</h1>
+        <h2 class="subtitle">Smart Light Sense</h2>
+        </a>
+        <nav>
+            <a href="statistics.html" class="icon-nav icon-settings"></a>
+            <a href="settings.html" class="icon-nav icon-statistics"></a>
+        </nav>
+
+    </header>
+    <main>
+
+        <section class="status-outside">
+            <div class="status-card wifi-card">
+                <p class="type-data-outside">WIFI</p>
+                <p class="data-outside" id="wifiName">Name of the Wi-Fi</p>
+            </div>
+            <div class="status-card">
+                <p class="type-data-outside">LOCAL</p>
+                <p class="data-outside" id="localPlace">París, FR</p>
+            </div>
+            <div class="status-card">
+                <p class="type-data-outside">TEMPERATURA</p>
+                <p class="data-outside" id="tempOutside">00 °C</p>
+            </div>
+            <div class="status-card">
+                <p class="type-data-outside">HUMEDAD</p>
+                <p class="data-outside" id="humidityOutside">00%</p>
+            </div>
+            <div class="status-card">
+                <p class="type-data-outside">VEL. VIENTO</p>
+                <p class="data-outside" id="velocityWind">00 Km/H</p>
+            </div>
+        </section>
+
+        <section class="status-inside">
+            <h1 class="title-inside">LUZ</h1>
+            <div class="switch-light btn-switch">
+                <h3>ON</h3>
+                <button class="btn-switch-light" id="switchLight"></button>
+                <h3>OFF</h3>
+            </div>
+            <div class="status-inside-data">
+                <div class="type-data-inside">
+                    <p class="label-data-inside">TEMPERATURA</p>
+                    <p class="data-inside" id="tempInside">00°</p>
+                </div>
+                <div class="type-data-inside">
+                    <p class="label-data-inside">HUMEDAD</p>
+                    <p class="data-inside" id="humidityInside">00%</p>
+                </div>
+                <div class="type-data-inside">
+                    <p class="label-data-inside">ILUMINACIÓN</p>
+                    <p class="data-inside" id="illumination">000</p>
+                </div>
+            </div>
+            <div class="switch-light-mode btn-switch">
+                <h3>AUTO</h3>
+                <button class="btn-switch-light-mode" id="switchLightMode"></button>
+                <h3>MANUAL</h3>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

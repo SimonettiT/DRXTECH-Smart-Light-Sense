@@ -30,6 +30,23 @@ h1 {
   font-size: 36px;
 }
 
+label {
+  color: #0B032D;
+  font-weight: 700;
+  text-align: center;
+  font-size: 14px;
+}
+
+.status-data-input, .status-data-select {
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  margin: 5px 0 15px 0;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,7 +63,7 @@ header {
           align-items: center;
   width: 85%;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 5vw;
   height: 25vw;
   border-bottom: 1px solid #0B032D;
 }
@@ -84,6 +101,7 @@ nav .icon-statistics {
   grid-row-gap: 20px;
   width: 85%;
   margin: auto;
+  height: 35vh;
 }
 
 .status-outside .status-card {
@@ -121,7 +139,7 @@ nav .icon-statistics {
   height: 387px;
   margin: auto;
   text-align: center;
-  margin-top: 3px;
+  margin-top: 28px;
 }
 
 .status-inside .title-inside {
@@ -181,5 +199,87 @@ nav .icon-statistics {
   font-weight: 700;
   font-size: 22px;
   margin-bottom: 5px;
+}
+
+.network-status {
+  width: 70%;
+  margin: auto;
+}
+
+.network-status .location-and-db-status {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.network-status .location-and-db-status .location-block {
+  width: 70%;
+}
+
+.network-status .location-and-db-status .db-block {
+  width: 25%;
+}
+
+.network-status .energy-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin: auto;
+  margin-top: 30px;
+  height: 200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.network-status .energy-status .energy-status-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.network-status .energy-status .energy-status-block .energy-item {
+  display: inline-block;
+  width: 45%;
+}
+
+.network-status .energy-status .energy-status-block .cancel-button {
+  width: 100%;
+}
+
+.network-status .energy-status p {
+  font-size: 16px;
+}
+
+.network-status .energy-status input {
+  background-color: #97D91C;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

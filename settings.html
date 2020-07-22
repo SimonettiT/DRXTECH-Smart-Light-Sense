@@ -15,13 +15,58 @@
         <h2 class="subtitle">Smart Light Sense</h2>
         </a>
         <nav>
-            <a href="statistics.html" class="icon-nav icon-settings"></a>
-            <a href="settings.html" class="icon-nav icon-statistics"></a>
+            <a href="settings.html" class="icon-nav icon-settings"></a>
+            <a href="statistics.html" class="icon-nav icon-statistics"></a>
         </nav>
 
     </header>
     <main>
-
+        <form method="post" class="network-status">
+            <div class="status-block wifi-block">
+                <label class="label-status">WIFI STATUS</label>
+                <input class="status-data-input" id="ipWifi" type="text" value="IP: 127.0.0.1:5500">
+            </div>
+            <div class="location-and-db-status">
+                <div class="status-block location-block">
+                    <label class="label-status">LOCAL</label>
+                    <select id="locationInfo" class="status-data-select">
+                        <option value="paris">París, FR</option>
+                        <option value="curitiba">Curitiba, BR</option>
+                        <option value="cordoba">Córdoba, AR</option>
+                    </select>
+                </div>
+                <div class="status-block db-block">
+                    <label class="label-status">dB</label>
+                    <input class="status-data-input" id="dBInfo" type="text" value="000">
+                </div>
+            </div>
+            <div class="status-block">
+                <label class="label-status">MIN. LIGHT</label>
+                <input class="status-data-input" id="minLight" type="text" value="Data">
+            </div>
+            <div class="status-block">
+                <label class="label-status">MIN. PROXIMITY</label>
+                <input class="status-data-input" id="minProximity" type="text" value="Data">
+            </div>
+            <div class="energy-status">
+                <div class="energy-status-block">
+                    <p class="energy-item">Energy Status:</p>
+                    <input class="energy-item" type="reset" value="RESET">
+                </div>
+                <div class="energy-status-block">
+                    <p class="energy-item">Time on:</p>
+                    <p class="energy-item">00:00 h</p>
+                </div>
+                <div class="energy-status-block">
+                    <p class="energy-item">Energy:</p>
+                    <p class="energy-item">000 Kwh</p>
+                </div>
+                <div class="energy-status-block">
+                    <a class="energy-item" href="index.html"><input class="cancel-button" type="button" value="CANCEL"></a>
+                <input class="energy-item" type="submit" value="SAVE">
+                </div>
+            </div>
+        </form>
     </main>
 
 </body>
